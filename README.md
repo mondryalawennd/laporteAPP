@@ -8,6 +8,4 @@ Angular Material: Biblioteca de componentes para design e layout.
 
 RxJS: Biblioteca para programação reativa com observables.
 
-JWT (JSON Web Token): Para autenticação e autorização do usuário.
-
 Angular CLI: Ferramenta de linha de comando para gerar, testar e rodar a aplicação.
