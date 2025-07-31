@@ -8,10 +8,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let funcionario of funcionarios$">
+      <tr *ngFor="let funcionario of funcionarios$" (click)="detalheFuncionario(funcionario.id)">
         <td>{{ funcionario.nome }}</td>
         <td>{{ funcionario.sobrenome }}</td>
-        <td>{{ funcionario.cargoId | cargoNome }}</td> <!-- Usando o pipe aqui -->
+        <td>{{ funcionario.cargoId | cargoNome }}</td> 
       </tr>
     </tbody>
   </table>
@@ -21,6 +21,8 @@
   <button mat-raised-button (click)="addFuncionario()" color="primary">
     Novo Funcionário
   </button>
+
+
 </mat-card-actions>
 
 

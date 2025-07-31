@@ -18,7 +18,8 @@ export const routes: Routes = [
   {
     path: "funcionario-create",
     component: FuncionarioCreate
-  }
+  },
+   { path: 'funcionario-create/:id', component: FuncionarioCreate },
 ];
 
 

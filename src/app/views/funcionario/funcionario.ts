@@ -32,7 +32,7 @@ constructor(private router: Router,private funcionarioService: FuncionarioServic
       next: (data) => {
         this.funcionarios$ =  data;
         
-        console.log(this.funcionarios$ )
+       
         this.cdRef.detectChanges();
       },
       error: (error) => {
@@ -43,6 +43,10 @@ constructor(private router: Router,private funcionarioService: FuncionarioServic
 
    addFuncionario(): void {
    this.router.navigate(['/funcionario-create']);
+  }
+
+  detalheFuncionario(funcionarioId: number): void {
+    this.router.navigate(['/funcionario-create', funcionarioId]);
   }
 
 }
