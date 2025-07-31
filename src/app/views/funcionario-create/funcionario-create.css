@@ -54,21 +54,16 @@
     width: 300px;
 
 }
-
 .button-content {
-  display: table-cell;
-  margin-right: 20px;
-  padding: 10px 10px 15px 5px;
   display: flex;
+  gap: 12px; 
   justify-content: flex-end;
+  align-items: center; 
+  margin-top: 16px; 
 }
 
-.button-content-save {
-  display: table-cell;
-  margin-right: 20px;
-  padding: 10px 10px 15px 5px;
-  display: flex;
-  justify-content: flex-start;
+.button-content button {
+  margin: 0; 
 }
   
   .valor-right-align {

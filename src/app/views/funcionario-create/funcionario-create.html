@@ -62,16 +62,13 @@
 
             
             <mat-divider></mat-divider>
-            <div class="button-content">
-               <mat-card-actions style="width: 20px;" class="button-content-save">
-                    <button mat-raised-button  type="submit" color="primary">
-                        Salvar
-                    </button> &nbsp;&nbsp;
-                </mat-card-actions>
-            </div>
+                <div class="button-content">
+                    <mat-card-actions class="button-content-save">
+                        <button mat-raised-button type="submit" color="primary">Salvar</button>
+                    </mat-card-actions>
+                </div>
              </form>
-            <div class="button-content" style="width: 20px;">
-                       
+            <div class="button-content">
                 <button mat-raised-button (click)="Cancel()" > Cancelar </button>
                 <button class="button-content" *ngIf="funcionario?.id" mat-raised-button (click)="excluirFuncionario()" color="warn">
                     Excluir
