@@ -1,0 +1,64 @@
+/* Container da Tabela */
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tabela */
+.funcionario-table {
+  width: 100%;
+  border-collapse: collapse; /* Remover espaços entre as células */
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px;
+}
+
+/* Cabeçalho da Tabela */
+.funcionario-table th {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Corpo da Tabela */
+.funcionario-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Linha fina entre as células */
+}
+
+/* Estilo para as Linhas Alternadas (Zebra Striping) */
+.funcionario-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.funcionario-table tr:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de Ação */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,35 @@
+.sidenav {
+    background-color: #aecae6;
+    width: 150px;
+}
+
+.list-item{
+    color: #FFF;
+}
+
+.sidenav a{
+    text-decoration: #aecae6;
+}
+
+.list-item-t{
+    color: #FFF;
+}
+
+.sidenav i {
+    padding-right: 2px;
+    padding-left: 10px;    
+    vertical-align:bottom;
+}
+
+.ptop {
+  padding-top: 5px ;
+}
+
+.sidenav a{
+    font-size: smaller;
+}
+
+.content{
+    padding: 16px;
+    background-color: #FFF;
+}

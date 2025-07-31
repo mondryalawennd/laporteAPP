@@ -1,0 +1,80 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Novo Funcionário</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <div class="div-container">
+            <form [formGroup]="funcionarioForm" (ngSubmit)="CriarFuncionario()">
+
+                <mat-card-title>Dados Funcionário</mat-card-title>
+                <mat-divider></mat-divider>
+                <mat-form-field class="campolongo" appearance="fill" floatLabel="always">
+                    <mat-label>Nome</mat-label>
+                    <input matInput type="text" formControlName="nome">
+                </mat-form-field>
+                
+                <mat-form-field style="padding-left: 55px;" class="campolongo" appearance="fill" floatLabel="always">
+                    <mat-label>Sobrenome</mat-label>
+                    <input matInput type="text" formControlName="sobrenome">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" floatLabel="always">
+                    <mat-label>CPF</mat-label>
+                    <input matInput type="text" formControlName="cpf" mask="000.000.000-00">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" floatLabel="always" style=" width: 270px">
+                    <mat-label>Data de Nascimento</mat-label>
+                    <input matInput type="datetime" formControlName="dataNascimento" mask="00/00/0000">
+                </mat-form-field>
+
+                <mat-form-field style="padding-left: 30px; width: 240px;" appearance="fill" floatLabel="always">
+                    <mat-label>Telefone 1</mat-label>
+                    <input matInput formControlName="telefone1" type="tel">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill"  style=" width: 240px;"  floatLabel="always">
+                    <mat-label>Telefone 2</mat-label>
+                    <input matInput formControlName="telefone2"  type="tel">
+                </mat-form-field>
+
+                <mat-form-field style=" width: 500px;"  appearance="fill" floatLabel="always">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" type="email">
+                </mat-form-field>
+
+                <mat-form-field style=" width: 500px; padding-left: 30px;" appearance="fill" floatLabel="always">
+                    <mat-label>Gerente</mat-label>
+                    <input matInput formControlName="nomeGerente" type="email">
+                </mat-form-field>
+
+               <mat-form-field style=" width: 500px;" appearance="fill" floatLabel="always">
+                    <mat-label>Senha</mat-label>
+                    <input matInput formControlName="senha" type="text">
+                </mat-form-field>
+              
+            <mat-radio-group formControlName="cargoId" style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <mat-radio-button *ngFor="let cargo of cargos" [value]="cargo.value">
+                {{ cargo.label }}
+            </mat-radio-button>
+            </mat-radio-group>
+
+            
+            <mat-divider></mat-divider>
+            <mat-card-actions class="button-content">
+                <button mat-raised-button  type="submit" color="primary">
+                    Salvar
+                </button> &nbsp;&nbsp;
+
+                <button mat-raised-button>
+                    Cancelar
+                </button>
+
+            </mat-card-actions>
+
+            </form>
+        </div>
+    </mat-card-content>
+
+</mat-card>

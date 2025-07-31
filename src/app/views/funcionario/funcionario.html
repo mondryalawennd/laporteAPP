@@ -1,0 +1,27 @@
+<div class="table-container">
+  <table class="funcionario-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Cargo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let funcionario of funcionarios$">
+        <td>{{ funcionario.nome }}</td>
+        <td>{{ funcionario.sobrenome }}</td>
+        <td>{{ funcionario.cargoId | cargoNome }}</td> <!-- Usando o pipe aqui -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<mat-card-actions class="button-container">
+  <button mat-raised-button (click)="addFuncionario()" color="primary">
+    Novo Funcionário
+  </button>
+</mat-card-actions>
+
+
+

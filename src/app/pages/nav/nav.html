@@ -1,0 +1,18 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list"> 
+            <a class="list-item"  routerLink="/">
+              <i class="material-icons"> home </i>
+               Início
+            </a>
+           <p class="ptop" ></p>
+            <a class="list-item" routerLink="/funcionario">
+                <i class="material-icons"> assignment_turned_in </i>
+                Registrar Funcionário
+              </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+       <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
